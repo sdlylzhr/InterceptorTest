@@ -31,6 +31,11 @@ public class SecController {
 
     // @RequestHeader
 
+    @RequestMapping(value = "/aa")
+    public String testgit(){
+        return "git";
+    }
+
 
     @RequestMapping(value = "/savedata", method = RequestMethod.POST)
     public String saveData(@RequestBody List<Map<String, String>> list){
